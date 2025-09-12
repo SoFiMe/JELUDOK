@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 19325748}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.309}
+  m_LocalPosition: {x: 0, y: 0, z: -0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -704,8 +704,8 @@ GameObject:
   - component: {fileID: 200459604}
   - component: {fileID: 200459603}
   - component: {fileID: 200459602}
-  m_Layer: 0
-  m_Name: ChooseButton (2)
+  m_Layer: 11
+  m_Name: ChooseButton3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1151,8 +1151,8 @@ GameObject:
   - component: {fileID: 457376218}
   - component: {fileID: 457376217}
   - component: {fileID: 457376216}
-  m_Layer: 0
-  m_Name: ChooseButton (2)
+  m_Layer: 11
+  m_Name: ChooseButton2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2225,7 +2225,7 @@ Transform:
   m_GameObject: {fileID: 1221555552}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.001}
+  m_LocalPosition: {x: 0, y: 0, z: 0.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3113,8 +3113,8 @@ GameObject:
   - component: {fileID: 1694305636}
   - component: {fileID: 1694305635}
   - component: {fileID: 1694305634}
-  m_Layer: 0
-  m_Name: ChooseButton (2)
+  m_Layer: 11
+  m_Name: ChooseButton1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3757,6 +3757,8 @@ MonoBehaviour:
   buttonLayer:
     serializedVersion: 2
     m_Bits: 2048
+  foodSystem: {fileID: 1465347525}
+  ButtonType: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

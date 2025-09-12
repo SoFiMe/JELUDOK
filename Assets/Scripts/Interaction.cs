@@ -8,6 +8,10 @@ public class Interaction : MonoBehaviour
     public float interactionDistance;
     public LayerMask buttonLayer;
 
+    public FoodSystem foodSystem;
+
+    public string ButtonType;
+
     private void Update()
     {
         InteractionWithButton();
@@ -16,6 +20,33 @@ public class Interaction : MonoBehaviour
     {
         if (!Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit hit, interactionDistance, buttonLayer)) return;
 
-        Debug.Log("Кнопка");
+        if(hit.collider.gameObject.name == "FoodButton")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                foodSystem.GiveFoodToTheTable();
+            }
+        }
+        if(hit.collider.gameObject.name == "ChooseButton1")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("Выбрал 1");
+            }
+        }
+        if (hit.collider.gameObject.name == "ChooseButton2")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("Выбрал 2");
+            }
+        }
+        if (hit.collider.gameObject.name == "ChooseButton3")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("Выбрал 3");
+            }
+        }
     }
 }

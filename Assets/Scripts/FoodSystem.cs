@@ -12,7 +12,7 @@ public class FoodSystem : MonoBehaviour
     public GameObject[] foodUI;
     void Start()
     {
-        GiveFoodToTheTable();
+        
     }
 
     
