@@ -9,8 +9,12 @@ public class Interaction : MonoBehaviour
     public LayerMask buttonLayer;
 
     public FoodSystem foodSystem;
+    public HealthSystem healthSystem;
+    public Sounds sounds;
 
     public string ButtonType;
+
+    
 
     private void Update()
     {
@@ -25,6 +29,7 @@ public class Interaction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 foodSystem.GiveFoodToTheTable();
+                sounds.PlayButton();
             }
         }
         if(hit.collider.gameObject.name == "ChooseButton1")
@@ -32,6 +37,10 @@ public class Interaction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Выбрал 1");
+                healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[0]);
+                Instantiate(foodSystem.GetCurrentArray()[0]);
+                sounds.PlayButton();
+
             }
         }
         if (hit.collider.gameObject.name == "ChooseButton2")
@@ -39,6 +48,8 @@ public class Interaction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Выбрал 2");
+                healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[1]);
+                sounds.PlayButton();
             }
         }
         if (hit.collider.gameObject.name == "ChooseButton3")
@@ -46,6 +57,8 @@ public class Interaction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Выбрал 3");
+                healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[2]);
+                sounds.PlayButton();
             }
         }
     }
