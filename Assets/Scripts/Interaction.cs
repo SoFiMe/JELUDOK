@@ -13,7 +13,8 @@ public class Interaction : MonoBehaviour
     public Sounds sounds;
 
     public string ButtonType;
-
+    public Animation a;
+    public float timer;
     
 
     private void Update()
@@ -37,6 +38,7 @@ public class Interaction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Выбрал 1");
+                hit.collider.gameObject.GetComponent<Animator>().SetBool("click",true);
                 healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[0]);
                 Instantiate(foodSystem.GetCurrentArray()[0]);
                 sounds.PlayButton();
@@ -48,7 +50,9 @@ public class Interaction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Выбрал 2");
+                hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                 healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[1]);
+                Instantiate(foodSystem.GetCurrentArray()[1]);
                 sounds.PlayButton();
             }
         }
@@ -57,7 +61,9 @@ public class Interaction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Выбрал 3");
+                hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                 healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[2]);
+                Instantiate(foodSystem.GetCurrentArray()[2]);
                 sounds.PlayButton();
             }
         }
