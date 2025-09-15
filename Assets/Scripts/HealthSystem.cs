@@ -5,7 +5,7 @@ using TMPro;
 
 public class HealthSystem : MonoBehaviour
 {
-    public int Health;
+    public int hp;
     public int p1;
     public int p2;
     public int p3;
@@ -29,7 +29,7 @@ public class HealthSystem : MonoBehaviour
 
     public void SetInformation()
     {
-        health.text = health.ToString();
+        health.text = hp.ToString();
         parametrText1.text = "Белки " + p1.ToString();
         parametrText2.text = "Жиры " + p2.ToString();
         parametrText3.text = "Углеводы " + p3.ToString();
@@ -39,7 +39,7 @@ public class HealthSystem : MonoBehaviour
     {
         if(p1 <= 0 || p2 <= 0 || p3 <= 0)
         {
-            Health--;
+            hp--;
         }
         else
         {
