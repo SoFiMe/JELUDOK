@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -29,10 +30,14 @@ public class HealthSystem : MonoBehaviour
 
     public void SetInformation()
     {
-        health.text = hp.ToString();
-        parametrText1.text = "Белки " + p1.ToString();
-        parametrText2.text = "Жиры " + p2.ToString();
-        parametrText3.text = "Углеводы " + p3.ToString();
+        string result = string.Concat(Enumerable.Repeat("[]", hp));
+        health.text = "Здоровье " + result;
+        result = string.Concat(Enumerable.Repeat("[]", p1));
+        parametrText1.text = "Белки " + result;
+        result = string.Concat(Enumerable.Repeat("[]", p2));
+        parametrText2.text = "Жиры " + result;
+        result = string.Concat(Enumerable.Repeat("[]", p3));
+        parametrText3.text = "Углеводы " + result;
 
     }
     public void CheckParametrs()
@@ -48,9 +53,26 @@ public class HealthSystem : MonoBehaviour
     }
     public void ParametrsAdd(GameObject food)
     {
+        
         p1 += food.gameObject.GetComponent<Food>().parametr1;
+        if(p1 > maxPoint)
+        {
+            p1 = maxPoint;
+        }
         p2 += food.gameObject.GetComponent<Food>().parametr2;
+        if (p2 > maxPoint)
+        {
+            p2 = maxPoint;
+        }
         p3 += food.gameObject.GetComponent<Food>().parametr3;
+        if (p3 > maxPoint)
+        {
+            p3 = maxPoint;
+        }
+        if(hp > maxPoint)
+        {
+            hp = maxPoint;
+        }
         SetInformation();
     }
 

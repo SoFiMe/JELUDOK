@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class FoodUI : MonoBehaviour
 {
@@ -38,10 +39,12 @@ public class FoodUI : MonoBehaviour
     public void SetInformationToText()
     {
         nameText.text = name;
-        parametrText1.text = "Белки " + parametr1.ToString();
-        parametrText2.text = "Жиры " + parametr2.ToString();
-        parametrText3.text = "Углеводы " + parametr3.ToString();
-
+        string result1 = string.Concat(Enumerable.Repeat("[]", parametr1));
+        parametrText1.text = "Белки " + result1;
+        result1 = string.Concat(Enumerable.Repeat("[]", parametr2));
+        parametrText2.text = "Жиры " + result1;
+        result1 = string.Concat(Enumerable.Repeat("[]", parametr3));
+        parametrText3.text = "Углеводы " + result1;
     }
 
 }
