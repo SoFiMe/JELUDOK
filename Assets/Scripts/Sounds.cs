@@ -21,4 +21,8 @@ public class Sounds : MonoBehaviour
     {
         audioSource.PlayOneShot(clips[0]);
     }
+    public void PlayLever()
+    {
+        audioSource.PlayOneShot(clips[1]);
+    }
 }

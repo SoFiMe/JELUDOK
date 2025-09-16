@@ -22,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+    public float timer;
+    public float footstepCd;
+    public FootstepSound footstepSound;
 
     void Start()
     {
@@ -31,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
-
+        timer += Time.deltaTime;
         MyInput();
         SpeedControl();
 
@@ -43,6 +46,15 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.drag = 0;
         }
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            if (timer >= footstepCd)
+            {
+                footstepSound.PlayFootstep();
+                timer = 0;
+            }
+        }
+
     }
     private void FixedUpdate()
     {
@@ -57,7 +69,6 @@ public class PlayerMovement : MonoBehaviour
     private void MovePlayer()
     {
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
     }
     private void SpeedControl()

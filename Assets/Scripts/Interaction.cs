@@ -30,7 +30,8 @@ public class Interaction : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 foodSystem.GiveFoodToTheTable();
-                sounds.PlayButton();
+                hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
+                sounds.PlayLever();
             }
         }
         if(hit.collider.gameObject.name == "ChooseButton1")
