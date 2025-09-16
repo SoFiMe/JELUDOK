@@ -36,36 +36,39 @@ public class Interaction : MonoBehaviour
         }
         if(hit.collider.gameObject.name == "ChooseButton1")
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && foodSystem.foodIsSelected == false)
             {
                 Debug.Log("Выбрал 1");
                 hit.collider.gameObject.GetComponent<Animator>().SetBool("click",true);
                 healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[0]);
                 Instantiate(foodSystem.GetCurrentArray()[0]);
                 sounds.PlayButton();
+                foodSystem.foodIsSelected = true;
 
             }
         }
         if (hit.collider.gameObject.name == "ChooseButton2")
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && foodSystem.foodIsSelected == false)
             {
                 Debug.Log("Выбрал 2");
                 hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                 healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[1]);
                 Instantiate(foodSystem.GetCurrentArray()[1]);
                 sounds.PlayButton();
+                foodSystem.foodIsSelected = true;
             }
         }
         if (hit.collider.gameObject.name == "ChooseButton3")
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && foodSystem.foodIsSelected == false)
             {
                 Debug.Log("Выбрал 3");
                 hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                 healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[2]);
                 Instantiate(foodSystem.GetCurrentArray()[2]);
                 sounds.PlayButton();
+                foodSystem.foodIsSelected = true;
             }
         }
     }

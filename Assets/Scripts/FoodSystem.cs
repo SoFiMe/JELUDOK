@@ -12,6 +12,8 @@ public class FoodSystem : MonoBehaviour
     public GameObject foodTablet;
 
     public GameObject[] foodUI;
+
+    public bool foodIsSelected;
     void Start()
     {
         
@@ -22,8 +24,8 @@ public class FoodSystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            day = "day" + dayInt.ToString();
             dayInt++;
+            day = "day" + dayInt.ToString();
         }
     }
     public void GiveFoodToTheTable()

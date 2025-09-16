@@ -17,16 +17,21 @@ public class FoodUI : MonoBehaviour
     public TextMeshPro parametrText2;
     public TextMeshPro parametrText3;
 
+    public FoodSystem foodSystem;
+
 
     void Start()
     {
-        SetInformationToText();
+        
     }
 
     
     void Update()
     {
-        
+        if (foodSystem.foodIsSelected)
+        {
+            CleanConsole();
+        }
     }
     public void GetFoodInformation(GameObject food)
     {
@@ -45,6 +50,13 @@ public class FoodUI : MonoBehaviour
         parametrText2.text = "∆иры " + result1;
         result1 = string.Concat(Enumerable.Repeat("[]", parametr3));
         parametrText3.text = "”глеводы " + result1;
+    }
+    public void CleanConsole()
+    {
+        nameText.text = "";
+        parametrText1.text = "";
+        parametrText2.text = "";
+        parametrText3.text = "";
     }
 
 }

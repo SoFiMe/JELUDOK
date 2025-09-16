@@ -20,7 +20,7 @@ public class HealthSystem : MonoBehaviour
 
     void Start()
     {
-        
+        SetInformation();
     }
 
     void Update()
