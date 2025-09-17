@@ -12,6 +12,7 @@ public class Interaction : MonoBehaviour
     public HealthSystem healthSystem;
     public Sounds sounds;
     public Proccesor proccesor;
+    public Perehod perehod;
 
     public string ButtonType;
     public Animation a;
@@ -21,6 +22,7 @@ public class Interaction : MonoBehaviour
     public GameObject box;
     public bool foodOnScene;
     public bool go;
+
 
     private void Update()
     {
@@ -116,6 +118,9 @@ public class Interaction : MonoBehaviour
                             hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                             box.gameObject.GetComponent<Animator>().SetBool("floor", true);
                             sounds.PlayComplete();
+                            perehod.dadaEnd();
+                            FoodSystem.saveday++;
+                            
                         }
                     }
                 }

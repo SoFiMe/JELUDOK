@@ -1,22 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class FoodSystem : MonoBehaviour
 {
     public string day;
     public int dayInt;
+    public static int saveday =1;
     public GameObject[] day1;
     public GameObject[] day2;
+    public GameObject[] day3;
+    public GameObject[] day4;
+    public GameObject[] day5;
+    public GameObject[] day6;
+    public GameObject[] day7;
+    public GameObject[] day8;
+    public GameObject[] day9;
+    public GameObject[] day10;
 
     public GameObject foodTablet;
 
     public GameObject[] foodUI;
+    public TextMeshPro daytext;
 
     public bool foodIsSelected;
     void Start()
     {
-        
+        if (saveday == 1)
+        {
+            day = "day" + dayInt.ToString();
+            daytext.text = "Äåíü " + dayInt;
+        }
+        else
+        {
+            dayInt = saveday;
+            day = "day" + dayInt.ToString();
+            daytext.text = "Äåíü " + dayInt;
+        }
     }
 
     
@@ -25,7 +46,18 @@ public class FoodSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             dayInt++;
-            day = "day" + dayInt.ToString();
+            saveday++;
+            if(dayInt == 1)
+            {
+                day = "day" + dayInt.ToString();
+                daytext.text = "Äåíü " + dayInt;
+            }
+            else
+            {
+                dayInt = saveday;
+                day = "day" + dayInt.ToString();
+                daytext.text = "Äåíü " + dayInt;
+            }
         }
     }
     public void GiveFoodToTheTable()
@@ -46,6 +78,38 @@ public class FoodSystem : MonoBehaviour
         if (day == nameof(day2))
         {
             return day2;
+        }
+        if (day == nameof(day3))
+        {
+            return day3;
+        }
+        if (day == nameof(day4))
+        {
+            return day4;
+        }
+        if (day == nameof(day5))
+        {
+            return day5;
+        }
+        if (day == nameof(day6))
+        {
+            return day6;
+        }
+        if (day == nameof(day7))
+        {
+            return day7;
+        }
+        if (day == nameof(day8))
+        {
+            return day8;
+        }
+        if (day == nameof(day9))
+        {
+            return day9;
+        }
+        if (day == nameof(day10))
+        {
+            return day10;
         }
         return day1;
     }
