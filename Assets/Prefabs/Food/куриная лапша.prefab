@@ -151,3 +151,7 @@ MonoBehaviour:
   parametr1: 0
   parametr2: 0
   parametr3: 0
+  col: {fileID: 0}
+  rg: {fileID: 0}
+  mat: {fileID: 2100000, guid: bf726a7e4cffd2c40a5e265291622dc1, type: 2}
+  x: 0

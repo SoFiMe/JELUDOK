@@ -25,4 +25,12 @@ public class Sounds : MonoBehaviour
     {
         audioSource.PlayOneShot(clips[1]);
     }
+    public void PlayComplete()
+    {
+        audioSource.PlayOneShot(clips[2]);
+    }
+    public void PlayPress()
+    {
+        audioSource.PlayOneShot(clips[3]);
+    }
 }

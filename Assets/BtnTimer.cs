@@ -6,6 +6,12 @@ public class BtnTimer : MonoBehaviour
 {
     public float tmr;
     public Animator anim;
+    public GameObject box;
+    public bool da;
+    public bool food;
+
+    public static bool doDown = false;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -14,14 +20,58 @@ public class BtnTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(anim.GetBool("click") == true)
+        if (food)
         {
-            tmr += Time.deltaTime;
+            if (anim.GetBool("click") == true)
+            {
+                tmr += Time.deltaTime;
+            }
+            if (tmr >= 1)
+            {
+                anim.SetBool("click", false);
+                tmr = 0;
+            }
         }
-        if(tmr >= 1)
+        if (da)
         {
-            anim.SetBool("click", false);
-            tmr = 0;
+            if (box.GetComponent<Animator>().GetBool("ox") == true)
+            {
+                tmr += Time.deltaTime;
+            }
+            if (tmr >= 1)
+            {
+                anim.SetBool("click", false);
+                box.GetComponent<Animator>().SetBool("ox", false);
+                tmr = 0;
+            }
+        }
+        if (da)
+        {
+            if (box.GetComponent<Animator>().GetBool("press") == true)
+            {
+                tmr += Time.deltaTime;
+            }
+            if (tmr >= 1)
+            {
+                anim.SetBool("click", false);
+                box.GetComponent<Animator>().SetBool("press", false);
+                tmr = 0;
+            }
+        }
+        if (da)
+        {
+            if (box.GetComponent<Animator>().GetBool("floor") == true)
+            {
+                tmr += Time.deltaTime;
+                doDown = true;
+            }
+            if (tmr >= 1)
+            {
+                anim.SetBool("click", false);
+                doDown = false;
+                box.GetComponent<Animator>().SetBool("floor", false);
+                tmr = 0;
+            }
         }
 
     }

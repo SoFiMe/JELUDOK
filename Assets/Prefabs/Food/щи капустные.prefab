@@ -152,6 +152,10 @@ MonoBehaviour:
   parametr1: 0
   parametr2: 0
   parametr3: 0
+  col: {fileID: 0}
+  rg: {fileID: 0}
+  mat: {fileID: 2100000, guid: 9b46512f629b5f24ea75d4e45eabbc16, type: 2}
+  x: 0
 --- !u!64 &1185198801890250879
 MeshCollider:
   m_ObjectHideFlags: 0
