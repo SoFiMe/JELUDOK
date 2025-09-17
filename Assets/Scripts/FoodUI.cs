@@ -22,7 +22,7 @@ public class FoodUI : MonoBehaviour
 
     void Start()
     {
-        
+        CleanConsole();
     }
 
     
