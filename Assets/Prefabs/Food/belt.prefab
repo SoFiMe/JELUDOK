@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3553239135498416974}
   - component: {fileID: 8481858049733387108}
   - component: {fileID: -7622755640010318602}
+  - component: {fileID: 400358526084311610}
   m_Layer: 0
   m_Name: belt
   m_TagString: Untagged
@@ -134,3 +135,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -864259460963330315, guid: d6e38a6a93977e6419f6b31239f8ea68, type: 3}
+--- !u!114 &400358526084311610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603372464625040985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3cd65efed9cda438400889b6d92dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "\u0412\u0430\u0440\u0451\u043D\u043D\u044B\u0439 \u0440\u0435\u043C\u0435\u043D\u044C"
+  parametr1: 5
+  parametr2: 1
+  parametr3: 1
+  col: {fileID: 0}
+  rg: {fileID: 0}
+  mat: {fileID: 0}
+  x: 0

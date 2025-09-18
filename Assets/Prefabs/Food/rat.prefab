@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7691402147338710484}
   - component: {fileID: -8011289555437129462}
   - component: {fileID: -630545681107143665}
+  - component: {fileID: -5505466516348694866}
   m_Layer: 0
   m_Name: rat
   m_TagString: Untagged
@@ -134,3 +135,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -166946072253211226, guid: 75997eb6b4fb95d4eb5329e0aaa665fa, type: 3}
+--- !u!114 &-5505466516348694866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307176449271977677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f3cd65efed9cda438400889b6d92dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: "\u041A\u0440\u044B\u0441\u0430"
+  parametr1: 3
+  parametr2: 2
+  parametr3: 1
+  col: {fileID: 0}
+  rg: {fileID: 0}
+  mat: {fileID: 0}
+  x: 0

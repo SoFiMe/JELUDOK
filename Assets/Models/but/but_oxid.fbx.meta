@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5490fa88e2aa364aa6bda1c3c8cc221
+guid: 165d1fd5f32066b479b0e199752c7560
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: "\u041C\u0430\u0442\u0435\u0440\u0438\u0430\u043B"
-    second: {fileID: 2100000, guid: c18b8a5cc27ea5544a54466aedc7853d, type: 2}
+      name: tex_but
+    second: {fileID: 2100000, guid: f85e7d6c7d8d10b4295f856be3371fe1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u0433\u0440\u0438\u0431\u043D\u043E\u0439 \u0441\u0443\u043F"
+  m_Name: tex_fire
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 539e7ac47929a3146a458dec5623e5b2, type: 3}
+        m_Texture: {fileID: 2800000, guid: ff35b0a365a8bb74fbfe8e181e1c761d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -66,9 +66,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.259
+    - _Glossiness: 0.458
     - _GlossyReflections: 1
-    - _Metallic: 0.397
+    - _Metallic: 0.128
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
