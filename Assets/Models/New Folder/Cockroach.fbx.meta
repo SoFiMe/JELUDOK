@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d50671603bf06d742bdb7c2099fc514d
+guid: 1b8be9482ce539d488baf9ecd05d3ea8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,23 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: glass
-    second: {fileID: 2100000, guid: 51ededd1f5084fe4caebbc6675dd8c9d, type: 2}
+      name: BEARD_ROOT
+    second: {fileID: 2100000, guid: efb1dd948ea16be4c977df40078e4974, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: tex_box
-    second: {fileID: 2100000, guid: 66cd57fe6879c064dbe0806a0785185c, type: 2}
+      name: BELLY
+    second: {fileID: 2100000, guid: efb1dd948ea16be4c977df40078e4974, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: tex_monik_with_button_2
-    second: {fileID: 2100000, guid: 06cb1098fe74b464da365cebc4d6d2a7, type: 2}
+      name: BODY
+    second: {fileID: 2100000, guid: efb1dd948ea16be4c977df40078e4974, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: tex_oxidation.001
-    second: {fileID: 2100000, guid: 2ea7dd477eb21f94486d689612d55f4d, type: 2}
+      name: HEAD
+    second: {fileID: 2100000, guid: efb1dd948ea16be4c977df40078e4974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LEGS
+    second: {fileID: 2100000, guid: efb1dd948ea16be4c977df40078e4974, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -51,94 +56,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: floor.001|to open
-      takeName: floor.001|to open
-      internalID: -7286193598071679572
-      firstFrame: 0
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: oxidation|oxidat_go
-      takeName: oxidation|oxidat_go
-      internalID: 2447198211709887351
-      firstFrame: 0
-      lastFrame: 120
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: press|press
-      takeName: press|press
-      internalID: 6532979171492278999
-      firstFrame: 0
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
