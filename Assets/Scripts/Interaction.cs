@@ -169,21 +169,25 @@ public class Interaction : MonoBehaviour
                 {
                     if ((Input.GetMouseButtonDown(0)))
                     {
-                        if (proccesor.pressIsReady == true && proccesor.oxIsReady == true)
+                        if(box.gameObject.GetComponent<Animator>().GetBool("ox") == false && box.gameObject.GetComponent<Animator>().GetBool("press") == false)
                         {
-
-                            if (dadada == false)
+                            if (proccesor.pressIsReady == true && proccesor.oxIsReady == true)
                             {
-                                dadada = true;
-                                FoodSystem.saveday++;
+
+                                if (dadada == false)
+                                {
+                                    dadada = true;
+                                    FoodSystem.saveday++;
+                                }
+                                hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
+                                box.gameObject.GetComponent<Animator>().SetBool("floor", true);
+                                sounds.PlayComplete();
+                                perehod.dadaEnd();
+
+
                             }
-                            hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
-                            box.gameObject.GetComponent<Animator>().SetBool("floor", true);
-                            sounds.PlayComplete();
-                            perehod.dadaEnd();
-
-
                         }
+                        
                     }
                 }
             }
