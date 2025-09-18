@@ -4078,7 +4078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   on: 1
-  amount: 0.005
+  amount: 0.004
   speed: 0.1
   material: {fileID: 2100000, guid: 668e4ca5bbe07424e90bffec7dd41598, type: 2}
 --- !u!114 &953219498
@@ -10072,7 +10072,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.5901047, g: 0.8773585, b: 0.5504183, a: 1}
+  m_Color: {r: 0.4807111, g: 0.624, b: 0.4807111, a: 1}
   m_Intensity: 1
   m_Range: 23.07
   m_SpotAngle: 30
