@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class HealthSystem : MonoBehaviour
     public int p2;
     public int p3;
 
+    public static int hpStatic;
     public static int belok;
     public static int jir;
     public static int ugl;
@@ -27,12 +29,14 @@ public class HealthSystem : MonoBehaviour
     }
     public void Save()
     {
+        hpStatic = hp;
         belok =p1;
         jir = p2;
         ugl = p3;
     }
     public void Load()
     {
+        hp = hpStatic;
         p1= belok;
         p2 = jir;
         p3 = ugl;
@@ -91,11 +95,15 @@ public class HealthSystem : MonoBehaviour
     }
     public void CheckParametrs()
     {
-        if(p1 <= 0 || p2 <= 0 || p3 <= 0)
+        if(belok <=3 || jir <=3 || ugl <= 5)
         {
             if (hp > 0)
             {
                 hp--;
+                if(hp <= 0)
+                {
+                    SceneManager.LoadScene(1);
+                }
             }
         }
         else

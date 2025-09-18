@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class FoodSystem : MonoBehaviour
 {
@@ -32,17 +33,15 @@ public class FoodSystem : MonoBehaviour
             healthSystem.FirstDay();
             day = "day" + saveday.ToString();
             daytext.text = "Δενό " + saveday;
-            healthSystem.CheckParametrs();
             healthSystem.SetInformation();
 
         }
         else
         {
             healthSystem.Load();
-            healthSystem.CheckParametrs();
             healthSystem.SetInformation();
             day = "day" + saveday.ToString();
-            daytext.text = "Δενό " + saveday;
+            daytext.text = "Δενό " + saveday;           
         }
     }
 
@@ -50,6 +49,10 @@ public class FoodSystem : MonoBehaviour
     void Update()
     {
         Debug.Log(saveday);
+        if(saveday >= 10)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
     public void GiveFoodToTheTable()
     {

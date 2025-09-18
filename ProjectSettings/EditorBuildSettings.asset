@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/death.unity
+    guid: 542a7c8f94ff6b1439d0cccced139bb5
+  - enabled: 1
+    path: Assets/Scenes/pobeda.unity
+    guid: f5088aec0a7d4f94995184d0518aff4b
   m_configObjects: {}

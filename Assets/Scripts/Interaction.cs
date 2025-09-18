@@ -137,7 +137,7 @@ public class Interaction : MonoBehaviour
                     foodSystem.foodIsSelected = true;
                 }
             }
-            if (foodOnScene)
+            if (foodOnScene && foodSystem.foodIsSelected)
             {
                 if (hit.collider.gameObject.name == "OxBut")
                 {
@@ -178,6 +178,8 @@ public class Interaction : MonoBehaviour
                                 {
                                     dadada = true;
                                     FoodSystem.saveday++;
+                                    healthSystem.CheckParametrs();
+                                    healthSystem.Save();
                                 }
                                 hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                                 box.gameObject.GetComponent<Animator>().SetBool("floor", true);
