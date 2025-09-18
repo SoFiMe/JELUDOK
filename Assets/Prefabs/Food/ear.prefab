@@ -147,10 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3cd65efed9cda438400889b6d92dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: "\u0414\u0436\u043E\u043D"
-  parametr1: 3
+  name: "\u0418\u0432\u0430\u043D\u043E\u0432"
+  parametr1: 4
   parametr2: 2
-  parametr3: 1
+  parametr3: 2
   col: {fileID: 0}
   rg: {fileID: 0}
   mat: {fileID: 2100000, guid: bf668652397c4824db47d59e2842cec2, type: 2}

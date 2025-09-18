@@ -31,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6490774, y: 0.68083, z: 0.57054}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.6, y: 0.6605682, z: 0.55356044}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: "\u041F\u044E\u0440\u0435 \u043A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044C\u043D\u043E\u0435"
-  parametr1: 2
+  parametr1: 3
   parametr2: 1
   parametr3: 5
   col: {fileID: 0}

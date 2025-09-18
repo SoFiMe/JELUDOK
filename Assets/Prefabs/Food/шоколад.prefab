@@ -101,7 +101,7 @@ MonoBehaviour:
   name: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434 \u0438\u0437 \u043A\u043E\u043C\u043E\u0434\u0430"
   parametr1: 1
   parametr2: 1
-  parametr3: 2
+  parametr3: 5
   col: {fileID: 0}
   rg: {fileID: 0}
   mat: {fileID: 2100000, guid: 387432f36b23a0a44974b7a6a253c195, type: 2}
