@@ -24,6 +24,8 @@ public class Interaction : MonoBehaviour
     public bool foodOnScene;
     public bool go;
 
+    public bool dadada;
+
 
     private void Update()
     {
@@ -169,12 +171,18 @@ public class Interaction : MonoBehaviour
                     {
                         if (proccesor.pressIsReady == true && proccesor.oxIsReady == true)
                         {
+                            
                             hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                             box.gameObject.GetComponent<Animator>().SetBool("floor", true);
                             sounds.PlayComplete();
                             perehod.dadaEnd();
-                            FoodSystem.saveday++;
-                            
+
+                            if (dadada = false)
+                            {
+                                dadada = true;
+                                FoodSystem.saveday++;
+                            }
+
                         }
                     }
                 }

@@ -32,7 +32,9 @@ public class FoodSystem : MonoBehaviour
             healthSystem.FirstDay();
             day = "day" + dayInt.ToString();
             daytext.text = "Δενό " + dayInt;
-            
+            healthSystem.CheckParametrs();
+            healthSystem.SetInformation();
+
         }
         else
         {
