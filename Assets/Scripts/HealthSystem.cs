@@ -52,20 +52,35 @@ public class HealthSystem : MonoBehaviour
     public void SetInformation()
     {
         string result = string.Concat(Enumerable.Repeat("[]", hp));
-        health.text = "Здоровье " + result;
-        result = string.Concat(Enumerable.Repeat("[]", p1));
-        parametrText1.text = "Белки " + result;
-        result = string.Concat(Enumerable.Repeat("[]", p2));
-        parametrText2.text = "Жиры " + result;
-        result = string.Concat(Enumerable.Repeat("[]", p3));
-        parametrText3.text = "Углеводы " + result;
+        if (hp > 0)
+        {
+            health.text = "Здоровье " + result;
+        }
+        if(p1 > 0)
+        {
+            result = string.Concat(Enumerable.Repeat("[]", p1));
+            parametrText1.text = "Белки " + result;
+        }
+        if(p2 > 0)
+        {
+            result = string.Concat(Enumerable.Repeat("[]", p2));
+            parametrText2.text = "Жиры " + result;
+        }
+        if (p3 > 0)
+        {
+            result = string.Concat(Enumerable.Repeat("[]", p3));
+            parametrText3.text = "Углеводы " + result;
+        }
 
     }
     public void CheckParametrs()
     {
         if(p1 <= 0 || p2 <= 0 || p3 <= 0)
         {
-            hp--;
+            if (hp > 0)
+            {
+                hp--;
+            }
         }
         else
         {
