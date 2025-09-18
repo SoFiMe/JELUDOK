@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "\u042F\u0431\u043B\u043E\u043A\u043E"
   parametr1: 1
-  parametr2: 1
+  parametr2: 2
   parametr3: 2
   col: {fileID: 0}
   rg: {fileID: 0}

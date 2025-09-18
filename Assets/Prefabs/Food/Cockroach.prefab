@@ -152,9 +152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: "\u041C\u0435\u0440\u0442\u0432\u044B\u0439 \u0442\u0430\u0440\u0430\u043A\u0430\u043D"
-  parametr1: 3
-  parametr2: 1
-  parametr3: 1
+  parametr1: 4
+  parametr2: 2
+  parametr3: 2
   col: {fileID: 0}
   rg: {fileID: 0}
   mat: {fileID: 2100000, guid: eb06f73c9f4bb1149b80ba5c95592a24, type: 2}

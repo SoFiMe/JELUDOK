@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "\u0413\u0440\u0435\u0447\u043A\u0430 \u043E\u0442\u0432\u0430\u0440\u043D\u0430\u044F"
   parametr1: 3
-  parametr2: 2
+  parametr2: 3
   parametr3: 2
   col: {fileID: 0}
   rg: {fileID: 0}

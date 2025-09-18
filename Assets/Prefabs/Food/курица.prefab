@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: "\u041A\u0443\u0440\u0438\u0446\u0430 \u0432 \u0441\u043E\u0443\u0441\u0435"
-  parametr1: 6
+  parametr1: 5
   parametr2: 2
   parametr3: 3
   col: {fileID: 0}
