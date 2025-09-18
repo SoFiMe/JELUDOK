@@ -32,10 +32,12 @@ public class FoodSystem : MonoBehaviour
             healthSystem.FirstDay();
             day = "day" + dayInt.ToString();
             daytext.text = "Äåíü " + dayInt;
+            
         }
         else
         {
             healthSystem.Load();
+            healthSystem.SetInformation();
             dayInt = saveday;
             day = "day" + dayInt.ToString();
             daytext.text = "Äåíü " + dayInt;
@@ -45,22 +47,6 @@ public class FoodSystem : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            dayInt++;
-            saveday++;
-            if(dayInt == 1)
-            {
-                day = "day" + dayInt.ToString();
-                daytext.text = "Äåíü " + dayInt;
-            }
-            else
-            {
-                dayInt = saveday;
-                day = "day" + dayInt.ToString();
-                daytext.text = "Äåíü " + dayInt;
-            }
-        }
     }
     public void GiveFoodToTheTable()
     {

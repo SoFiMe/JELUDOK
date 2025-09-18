@@ -24,6 +24,7 @@ public class HealthSystem : MonoBehaviour
 
     void Start()
     {
+        CheckParametrs();
         SetInformation();
     }
     public void Save()
@@ -38,7 +39,6 @@ public class HealthSystem : MonoBehaviour
         p2 = jir;
         p3 = ugl;
         ParametrsReduce();
-        SetInformation();
     }
     public void FirstDay()
     {

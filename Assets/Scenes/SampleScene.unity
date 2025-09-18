@@ -599,10 +599,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518a69969db56264fb3e3f47b5fbb98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 1
-  p1: 1
-  p2: 1
-  p3: 1
+  hp: 5
+  p1: 3
+  p2: 3
+  p3: 5
   maxPoint: 5
   health: {fileID: 1319879496}
   parametrText1: {fileID: 1413453357}
@@ -7736,7 +7736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 321312
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a539078025d85664a8eb02bba4222bc7, type: 2}
   m_sharedMaterial: {fileID: -2454673757608604651, guid: a539078025d85664a8eb02bba4222bc7, type: 2}

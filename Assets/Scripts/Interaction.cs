@@ -97,6 +97,7 @@ public class Interaction : MonoBehaviour
                     Instantiate(foodSystem.GetCurrentArray()[0], spawnPoint.transform);
                     sounds.PlayButton();
                     foodSystem.foodIsSelected = true;
+                    healthSystem.Save();
 
                 }
             }
@@ -113,6 +114,7 @@ public class Interaction : MonoBehaviour
                     healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[1]);
                     Instantiate(foodSystem.GetCurrentArray()[1], spawnPoint.transform);
                     sounds.PlayButton();
+                    healthSystem.Save();
                     foodSystem.foodIsSelected = true;
                 }
             }
@@ -129,6 +131,7 @@ public class Interaction : MonoBehaviour
                     healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[2]);
                     Instantiate(foodSystem.GetCurrentArray()[2], spawnPoint.transform);
                     sounds.PlayButton();
+                    healthSystem.Save();
                     foodSystem.foodIsSelected = true;
                 }
             }
