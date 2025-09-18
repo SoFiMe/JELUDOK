@@ -3969,8 +3969,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   on: 1
-  amount: 0.0034
-  speed: 0
+  amount: 0.005
+  speed: 0.1
   material: {fileID: 2100000, guid: 668e4ca5bbe07424e90bffec7dd41598, type: 2}
 --- !u!114 &953219498
 MonoBehaviour:
@@ -3985,7 +3985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   on: 1
-  level: 85
+  level: 70
   material: {fileID: 2100000, guid: 84da12828e118449c8833ae1aa31804d, type: 2}
 --- !u!114 &953219499
 MonoBehaviour:
@@ -4001,9 +4001,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   on: 1
   grayscale: 0
-  amount: 800
-  strength: 0.9
-  noise: 0.4
+  amount: 640
+  strength: 0.8
+  noise: 0.55
   speed: 5
   material: {fileID: 2100000, guid: 34707840cacc149bbae1e03a783fcb40, type: 2}
 --- !u!114 &953219500
@@ -4019,8 +4019,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   on: 1
-  thickDistort: 0.7
-  fineDistort: 1.51
+  thickDistort: 0.8
+  fineDistort: 1.6
   material: {fileID: 2100000, guid: 0b2b1aef91c2345ab8d2fecf276fba3c, type: 2}
 --- !u!114 &953219501
 MonoBehaviour:
