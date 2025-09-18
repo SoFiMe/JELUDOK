@@ -11,6 +11,10 @@ public class HealthSystem : MonoBehaviour
     public int p2;
     public int p3;
 
+    public static int belok;
+    public static int jir;
+    public static int ugl;
+
     public int maxPoint;
 
     public TextMeshPro health;
@@ -22,7 +26,26 @@ public class HealthSystem : MonoBehaviour
     {
         SetInformation();
     }
-
+    public void Save()
+    {
+        belok =p1;
+        jir = p2;
+        ugl = p3;
+    }
+    public void Load()
+    {
+        p1= belok;
+        p2 = jir;
+        p3 = ugl;
+        ParametrsReduce();
+        SetInformation();
+    }
+    public void FirstDay()
+    {
+        p1 = 3;
+        p2 = 3;
+        p3 = 5;
+    }
     void Update()
     {
         
@@ -73,13 +96,17 @@ public class HealthSystem : MonoBehaviour
         {
             hp = maxPoint;
         }
+        Save();
         SetInformation();
     }
 
     public void ParametrsReduce()
     {
-        p1 -= Random.Range(1, 3);
-        p2 -= Random.Range(1, 3);
-        p3 -= Random.Range(1, 3);
+        //p1 -= Random.Range(1, 3);
+        //p2 -= Random.Range(1, 3);
+        //p3 -= Random.Range(1, 3);
+        p1 -= 3;
+        p2 -= 3;
+        p3 -= 5;
     }
 }

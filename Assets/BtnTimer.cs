@@ -38,7 +38,7 @@ public class BtnTimer : MonoBehaviour
             {
                 tmr += Time.deltaTime;
             }
-            if (tmr >= 1)
+            if (tmr >= 4)
             {
                 anim.SetBool("click", false);
                 box.GetComponent<Animator>().SetBool("ox", false);
@@ -51,7 +51,7 @@ public class BtnTimer : MonoBehaviour
             {
                 tmr += Time.deltaTime;
             }
-            if (tmr >= 1)
+            if (tmr >= 4)
             {
                 anim.SetBool("click", false);
                 box.GetComponent<Animator>().SetBool("press", false);
@@ -65,7 +65,7 @@ public class BtnTimer : MonoBehaviour
                 tmr += Time.deltaTime;
                 doDown = true;
             }
-            if (tmr >= 1)
+            if (tmr >= 4)
             {
                 anim.SetBool("click", false);
                 doDown = false;

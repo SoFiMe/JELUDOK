@@ -93,20 +93,26 @@ public class Interaction : MonoBehaviour
                 {
                     if ((Input.GetMouseButtonDown(0)))
                     {
-                        hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
-                        box.gameObject.GetComponent<Animator>().SetBool("ox", true);
-                        sounds.PlayPress();
-                        proccesor.oxIsReady = true;
+                        if (box.gameObject.GetComponent<Animator>().GetBool("press") == false)
+                        {
+                            hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
+                            box.gameObject.GetComponent<Animator>().SetBool("ox", true);
+                            sounds.PlayPress();
+                            proccesor.oxIsReady = true;
+                        }
                     }
                 }
                 if (hit.collider.gameObject.name == "PressBut")
                 {
                     if ((Input.GetMouseButtonDown(0)))
                     {
-                        hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
-                        box.gameObject.GetComponent<Animator>().SetBool("press", true);
-                        sounds.PlayPress();
-                        proccesor.pressIsReady = true;
+                        if (box.gameObject.GetComponent<Animator>().GetBool("ox") == false)
+                        {
+                            hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
+                            box.gameObject.GetComponent<Animator>().SetBool("press", true);
+                            sounds.PlayPress();
+                            proccesor.pressIsReady = true;
+                        }
                     }
                 }
                 if (hit.collider.gameObject.name == "FloorBut")

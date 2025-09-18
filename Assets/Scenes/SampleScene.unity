@@ -5402,23 +5402,22 @@ MonoBehaviour:
   - {fileID: 3137943447393864600, guid: 7b49b60d2ee7132418d5073e9e9fbec0, type: 3}
   - {fileID: 6360879319487535481, guid: 557a74d646a2cf045806c46ebc7949e2, type: 3}
   - {fileID: 6947425875838389585, guid: 0e8f38953d521e9479a3c5303055c7a3, type: 3}
-  day5: []
-  day6:
+  day5:
   - {fileID: 2842010465321795376, guid: ec2b5399082788c4c9053517efe01ab6, type: 3}
   - {fileID: 4836709904686702788, guid: c701d395631b03a42baa04f0190b5d0b, type: 3}
   - {fileID: 3763797410752110417, guid: 70546446d690b6c49bc6496012a61f61, type: 3}
-  day7:
+  day6:
   - {fileID: 1603372464625040985, guid: 9bc4ac87bae54c3409260c18c47d0666, type: 3}
   - {fileID: 3307176449271977677, guid: f564cf8575cd5b74f8f8700aba8f04e1, type: 3}
   - {fileID: 5830227011196507901, guid: 238b27217c3969640902a5ef982b05d5, type: 3}
-  day8:
+  day7:
   - {fileID: 654306659049116051, guid: 0f7c7ccd59731254cafce83f1a30a11c, type: 3}
   - {fileID: 7578285047976915194, guid: 2f37943745bc9694daf0f6380a06376a, type: 3}
   - {fileID: 1448701412800756370, guid: 5d8d2f598e661ef4a84a9a9c00636899, type: 3}
-  day9:
+  day8:
   - {fileID: 654306659049116051, guid: 0f7c7ccd59731254cafce83f1a30a11c, type: 3}
   - {fileID: 7578285047976915194, guid: 2f37943745bc9694daf0f6380a06376a, type: 3}
-  day10:
+  day9:
   - {fileID: 654306659049116051, guid: 0f7c7ccd59731254cafce83f1a30a11c, type: 3}
   foodTablet: {fileID: 0}
   foodUI:
@@ -5427,6 +5426,7 @@ MonoBehaviour:
   - {fileID: 315844128}
   daytext: {fileID: 1757388021}
   foodIsSelected: 0
+  healthSystem: {fileID: 130267582}
 --- !u!4 &1465347526
 Transform:
   m_ObjectHideFlags: 0
@@ -7479,7 +7479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2003888361
 MonoBehaviour:
   m_ObjectHideFlags: 0

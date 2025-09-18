@@ -17,7 +17,6 @@ public class FoodSystem : MonoBehaviour
     public GameObject[] day7;
     public GameObject[] day8;
     public GameObject[] day9;
-    public GameObject[] day10;
 
     public GameObject foodTablet;
 
@@ -25,15 +24,18 @@ public class FoodSystem : MonoBehaviour
     public TextMeshPro daytext;
 
     public bool foodIsSelected;
+    public HealthSystem healthSystem;
     void Start()
     {
         if (saveday == 1)
         {
+            healthSystem.FirstDay();
             day = "day" + dayInt.ToString();
             daytext.text = "Δενό " + dayInt;
         }
         else
         {
+            healthSystem.Load();
             dayInt = saveday;
             day = "day" + dayInt.ToString();
             daytext.text = "Δενό " + dayInt;
@@ -106,10 +108,6 @@ public class FoodSystem : MonoBehaviour
         if (day == nameof(day9))
         {
             return day9;
-        }
-        if (day == nameof(day10))
-        {
-            return day10;
         }
         return day1;
     }
