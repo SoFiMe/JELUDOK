@@ -603,7 +603,7 @@ MonoBehaviour:
   p1: 3
   p2: 3
   p3: 5
-  maxPoint: 5
+  maxPoint: 10
   health: {fileID: 1319879496}
   parametrText1: {fileID: 1413453357}
   parametrText2: {fileID: 741901714}
@@ -667,7 +667,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u043D\u0430\u0436\u043C\u0438 \u043D\u0430 \u0440\u044B\u0447\u0430\u0433
-    ->"
+    ->\n\u0417\u0430\u0442\u0440\u0430\u0442\u044B \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u043C\u0430:\r\n3
+    \u0431, 2 \u0436, 5 \u0443"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a539078025d85664a8eb02bba4222bc7, type: 2}
   m_sharedMaterial: {fileID: -2454673757608604651, guid: a539078025d85664a8eb02bba4222bc7, type: 2}
@@ -6731,7 +6732,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   day: 
-  dayInt: 1
   day1:
   - {fileID: 4374779499128889947, guid: 2de91f59991e26643bfee4cb2027f620, type: 3}
   - {fileID: 264315612723158127, guid: da12a2a84954aae408f5e9bb908a6974, type: 3}
