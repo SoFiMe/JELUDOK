@@ -7490,12 +7490,12 @@ MonoBehaviour:
   - {fileID: 3307176449271977677, guid: f564cf8575cd5b74f8f8700aba8f04e1, type: 3}
   - {fileID: 5830227011196507901, guid: 238b27217c3969640902a5ef982b05d5, type: 3}
   day7:
-  - {fileID: 654306659049116051, guid: 0f7c7ccd59731254cafce83f1a30a11c, type: 3}
-  - {fileID: 7578285047976915194, guid: 2f37943745bc9694daf0f6380a06376a, type: 3}
   - {fileID: 1448701412800756370, guid: 5d8d2f598e661ef4a84a9a9c00636899, type: 3}
-  day8:
   - {fileID: 654306659049116051, guid: 0f7c7ccd59731254cafce83f1a30a11c, type: 3}
   - {fileID: 7578285047976915194, guid: 2f37943745bc9694daf0f6380a06376a, type: 3}
+  day8:
+  - {fileID: 1448701412800756370, guid: 5d8d2f598e661ef4a84a9a9c00636899, type: 3}
+  - {fileID: 654306659049116051, guid: 0f7c7ccd59731254cafce83f1a30a11c, type: 3}
   - {fileID: 2842010465321795376, guid: 666bbf9cab7f3464aa1c9393bd015985, type: 3}
   day9:
   - {fileID: 654306659049116051, guid: 0f7c7ccd59731254cafce83f1a30a11c, type: 3}
@@ -7509,6 +7509,7 @@ MonoBehaviour:
   daytext: {fileID: 1757388021}
   foodIsSelected: 0
   healthSystem: {fileID: 130267582}
+  humans: []
 --- !u!4 &1465347526
 Transform:
   m_ObjectHideFlags: 0
@@ -10262,6 +10263,9 @@ MonoBehaviour:
   foodOnScene: 0
   go: 0
   dadada: 0
+  sok: 0
+  aks: 0
+  ivan: 0
 --- !u!82 &2065255340
 AudioSource:
   m_ObjectHideFlags: 0

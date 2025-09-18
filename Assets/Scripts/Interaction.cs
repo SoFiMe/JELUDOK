@@ -26,6 +26,12 @@ public class Interaction : MonoBehaviour
 
     public bool dadada;
 
+    public bool sok;
+    public bool aks;
+    public bool ivan;
+
+    public static GameObject foood;
+
 
     private void Update()
     {
@@ -96,7 +102,9 @@ public class Interaction : MonoBehaviour
                     Debug.Log("Выбрал 1");
                     hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                     healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[0]);
-                    Instantiate(foodSystem.GetCurrentArray()[0], spawnPoint.transform);
+                    foood =  Instantiate(foodSystem.GetCurrentArray()[0], spawnPoint.transform);
+                    
+
                     sounds.PlayButton();
                     foodSystem.foodIsSelected = true;
                     healthSystem.Save();
@@ -114,10 +122,11 @@ public class Interaction : MonoBehaviour
                     Debug.Log("Выбрал 2");
                     hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                     healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[1]);
-                    Instantiate(foodSystem.GetCurrentArray()[1], spawnPoint.transform);
+                    foood = Instantiate(foodSystem.GetCurrentArray()[1], spawnPoint.transform);
                     sounds.PlayButton();
                     healthSystem.Save();
                     foodSystem.foodIsSelected = true;
+                    
                 }
             }
             if (hit.collider.gameObject.name == "ChooseButton3")
@@ -131,7 +140,7 @@ public class Interaction : MonoBehaviour
                     Debug.Log("Выбрал 3");
                     hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                     healthSystem.ParametrsAdd(foodSystem.GetCurrentArray()[2]);
-                    Instantiate(foodSystem.GetCurrentArray()[2], spawnPoint.transform);
+                    foood = Instantiate(foodSystem.GetCurrentArray()[2], spawnPoint.transform);
                     sounds.PlayButton();
                     healthSystem.Save();
                     foodSystem.foodIsSelected = true;

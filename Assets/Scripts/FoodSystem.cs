@@ -26,6 +26,8 @@ public class FoodSystem : MonoBehaviour
 
     public bool foodIsSelected;
     public HealthSystem healthSystem;
+
+    public GameObject[] humans;
     void Start()
     {
         if (saveday == 1)
