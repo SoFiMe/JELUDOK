@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8505392553166672962}
   - component: {fileID: -1468564738001245662}
   - component: {fileID: 2630916671134711520}
+  - component: {fileID: 1185198801890250879}
   m_Layer: 0
   m_Name: "\u0449\u0438 \u043A\u0430\u043F\u0443\u0441\u0442\u043D\u044B\u0435"
   m_TagString: Untagged
@@ -155,3 +156,25 @@ MonoBehaviour:
   rg: {fileID: 0}
   mat: {fileID: 2100000, guid: 9b46512f629b5f24ea75d4e45eabbc16, type: 2}
   x: 0
+--- !u!64 &1185198801890250879
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360879319487535481}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4787506166417798794, guid: 148acb45c4adc9840a9cdc254aa1116a, type: 3}
