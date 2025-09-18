@@ -8,7 +8,7 @@ public class FoodSystem : MonoBehaviour
 {
     public string day;
     //public int dayInt;
-    public static int saveday =1;
+    public static int saveday = 1;
     public GameObject[] day1;
     public GameObject[] day2;
     public GameObject[] day3;
