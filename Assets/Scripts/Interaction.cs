@@ -105,7 +105,7 @@ public class Interaction : MonoBehaviour
             }
             if (hit.collider.gameObject.name == "ChooseButton2")
             {
-                if (foodSystem.dayInt == 9)
+                if (FoodSystem.saveday== 9)
                 {
                     return;
                 }
@@ -122,7 +122,7 @@ public class Interaction : MonoBehaviour
             }
             if (hit.collider.gameObject.name == "ChooseButton3")
             {
-                if(foodSystem.dayInt == 8 || foodSystem.dayInt == 9)
+                if(FoodSystem.saveday == 8 || FoodSystem.saveday == 9)
                 {
                     return;
                 }

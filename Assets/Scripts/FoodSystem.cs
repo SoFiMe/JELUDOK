@@ -6,7 +6,7 @@ using TMPro;
 public class FoodSystem : MonoBehaviour
 {
     public string day;
-    public int dayInt;
+    //public int dayInt;
     public static int saveday =1;
     public GameObject[] day1;
     public GameObject[] day2;
@@ -30,8 +30,8 @@ public class FoodSystem : MonoBehaviour
         if (saveday == 1)
         {
             healthSystem.FirstDay();
-            day = "day" + dayInt.ToString();
-            daytext.text = "Äåíü " + dayInt;
+            day = "day" + saveday.ToString();
+            daytext.text = "Äåíü " + saveday;
             healthSystem.CheckParametrs();
             healthSystem.SetInformation();
 
@@ -41,15 +41,15 @@ public class FoodSystem : MonoBehaviour
             healthSystem.Load();
             healthSystem.CheckParametrs();
             healthSystem.SetInformation();
-            dayInt = saveday;
-            day = "day" + dayInt.ToString();
-            daytext.text = "Äåíü " + dayInt;
+            day = "day" + saveday.ToString();
+            daytext.text = "Äåíü " + saveday;
         }
     }
 
     
     void Update()
     {
+        Debug.Log(saveday);
     }
     public void GiveFoodToTheTable()
     {
