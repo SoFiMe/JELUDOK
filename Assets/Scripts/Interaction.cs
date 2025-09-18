@@ -13,6 +13,7 @@ public class Interaction : MonoBehaviour
     public Sounds sounds;
     public Proccesor proccesor;
     public Perehod perehod;
+    public Setting setting;
 
     public string ButtonType;
     public Animation a;
@@ -32,7 +33,43 @@ public class Interaction : MonoBehaviour
     {
         if (!Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit hit, interactionDistance, buttonLayer)) return;
 
-        if(hit.collider.gameObject.name == "FoodButton")
+        if (hit.collider.gameObject.name == "+Music")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                setting.plusMusic();
+                sounds.PlayLever();
+                hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
+            }
+        }
+        if (hit.collider.gameObject.name == "-Music")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                setting.minusMusic();
+                sounds.PlayLever();
+                hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
+            }
+        }
+        if (hit.collider.gameObject.name == "+Sound")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                setting.plusSound();
+                sounds.PlayLever();
+                hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
+            }
+        }
+        if (hit.collider.gameObject.name == "-Sound")
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                setting.minusSound();
+                sounds.PlayLever();
+                hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
+            }
+        }
+        if (hit.collider.gameObject.name == "FoodButton")
         {
             if (Input.GetMouseButtonDown(0) )
             {
@@ -65,6 +102,10 @@ public class Interaction : MonoBehaviour
             }
             if (hit.collider.gameObject.name == "ChooseButton2")
             {
+                if (foodSystem.dayInt == 9)
+                {
+                    return;
+                }
                 if (Input.GetMouseButtonDown(0) && foodSystem.foodIsSelected == false)
                 {
                     Debug.Log("Выбрал 2");
@@ -77,6 +118,10 @@ public class Interaction : MonoBehaviour
             }
             if (hit.collider.gameObject.name == "ChooseButton3")
             {
+                if(foodSystem.dayInt == 8 || foodSystem.dayInt == 9)
+                {
+                    return;
+                }
                 if (Input.GetMouseButtonDown(0) && foodSystem.foodIsSelected == false)
                 {
                     Debug.Log("Выбрал 3");
@@ -132,7 +177,6 @@ public class Interaction : MonoBehaviour
                 }
             }
             
-        }
-        
+        }       
     }
 }
