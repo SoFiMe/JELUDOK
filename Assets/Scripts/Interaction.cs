@@ -171,17 +171,17 @@ public class Interaction : MonoBehaviour
                     {
                         if (proccesor.pressIsReady == true && proccesor.oxIsReady == true)
                         {
-                            
+
+                            if (dadada == false)
+                            {
+                                dadada = true;
+                                FoodSystem.saveday++;
+                            }
                             hit.collider.gameObject.GetComponent<Animator>().SetBool("click", true);
                             box.gameObject.GetComponent<Animator>().SetBool("floor", true);
                             sounds.PlayComplete();
                             perehod.dadaEnd();
 
-                            if (dadada = false)
-                            {
-                                dadada = true;
-                                FoodSystem.saveday++;
-                            }
 
                         }
                     }
