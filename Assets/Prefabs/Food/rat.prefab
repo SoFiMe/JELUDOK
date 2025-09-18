@@ -150,7 +150,7 @@ MonoBehaviour:
   name: "\u041A\u0440\u044B\u0441\u0430"
   parametr1: 3
   parametr2: 2
-  parametr3: 2
+  parametr3: 4
   col: {fileID: 0}
   rg: {fileID: 0}
   mat: {fileID: 0}

@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: "\u0410\u043B\u0435\u043A\u0441\u0435\u0439"
-  parametr1: 4
-  parametr2: 2
-  parametr3: 2
+  parametr1: 3
+  parametr2: 4
+  parametr3: 5
   col: {fileID: 0}
   rg: {fileID: 0}
   mat: {fileID: 2100000, guid: 6462d6f83788fd74a8210b564b88aaaa, type: 2}
