@@ -37,6 +37,7 @@ public class FoodSystem : MonoBehaviour
         else
         {
             healthSystem.Load();
+            healthSystem.CheckParametrs();
             healthSystem.SetInformation();
             dayInt = saveday;
             day = "day" + dayInt.ToString();

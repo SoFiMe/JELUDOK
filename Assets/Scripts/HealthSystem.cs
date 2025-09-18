@@ -24,8 +24,6 @@ public class HealthSystem : MonoBehaviour
 
     void Start()
     {
-        CheckParametrs();
-        SetInformation();
     }
     public void Save()
     {
